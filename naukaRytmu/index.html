@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>naukaRytmu – aplikacja do ćwiczenia rytmu na pianinie</title>
+<meta name="description" content="naukaRytmu: aplikacja na Androida, która pokazuje, jak równo zagrałeś fragment utworu na pianinie cyfrowym. Warunki korzystania i polityka prywatności.">
+<style>
+  :root { --text: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; } }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 'Calibri Light', Calibri, Carlito, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); margin: 0 0 8px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>naukaRytmu</h1>
+  <p class="meta">Aplikacja na Androida do ćwiczenia rytmu na pianinie</p>
+
+  <p>naukaRytmu pomaga uczniowi gry na pianinie sprawdzić <strong>rytm</strong> i wysokość dźwięków.
+     Wczytujesz utwór z pliku MIDI, wybierasz fragment i grasz go na pianinie cyfrowym podłączonym przez USB.
+     Aplikacja pokazuje nuty z partytury razem z nutami zagranymi, każdą dokładnie w chwili, w której została zagrana:
+     które były za wcześnie, które za późno (w milisekundach), które zagrane innym klawiszem, a które pominięte.
+     Wynik można zobaczyć na pięciolinii albo jako „piano roll”.</p>
+  <ul>
+    <li><a href="#prywatnosc">Polityka prywatności</a></li>
+    <li><a href="#warunki">Warunki korzystania</a></li>
+  </ul>
+
+  <h2 id="prywatnosc">Polityka prywatności</h2>
+  <p class="meta">Obowiązuje od 18.11.2026</p>
+  <p><strong>Wszystko zostaje na urządzeniu.</strong> Aplikacja nie ma uprawnienia do internetu, więc nie może wysyłać żadnych danych.
+     Nie ma kont użytkowników, reklam, analityki ani śledzenia. Nie korzysta z konta Google ani z danych konta Google.</p>
+  <p><strong>Jakie dane aplikacja przechowuje</strong>, wyłącznie na urządzeniu:</p>
+  <ul>
+    <li>utwory (pliki MIDI), które sam wskażesz: aplikacja zachowuje ich kopię, żeby móc je otworzyć ponownie,</li>
+    <li>nagrania gry: wysokość, moment i siła każdego zagranego klawisza, wraz z datą i wynikiem próby,</li>
+    <li>ustawienia aplikacji.</li>
+  </ul>
+  <p>Dane te są w prywatnej pamięci aplikacji, do której inne aplikacje nie mają dostępu.</p>
+  <p><strong>Kopie nagrań w folderze Dokumenty.</strong> Domyślnie każde nagranie jest też zapisywane jako plik w folderze
+     <code>Documents/naukaRytmu</code> (na Androidzie 8 i 9: w folderze aplikacji w pamięci współdzielonej), żeby można je było
+     skopiować np. na komputer. Pliki w tym folderze mogą odczytać menedżery plików i inne aplikacje z dostępem do plików.
+     Tę funkcję można wyłączyć w Ustawieniach („Copy recordings to a folder”).</p>
+  <p><strong>Udostępnianie.</strong> Aplikacja przekazuje nagranie lub obraz wyniku innej aplikacji (np. poczcie albo Dyskowi Google)
+     tylko wtedy, gdy sam wybierzesz „Share” lub „Export” i wskażesz odbiorcę.</p>
+  <p><strong>Usuwanie danych.</strong> Próbę usuwa się w Historii (albo przyciskiem „Discard” zaraz po nagraniu).
+     Odinstalowanie aplikacji usuwa wszystkie dane z jej prywatnej pamięci. Pliki w folderze <code>Documents/naukaRytmu</code>
+     pozostają, dopóki sam ich nie usuniesz.</p>
+  <p><strong>Dzieci.</strong> Aplikacja nie zbiera danych osobowych, więc nie zbiera ich również od dzieci.</p>
+  <p><strong>Zmiany.</strong> Jeśli aplikacja zacznie korzystać z innych danych, ta polityka zostanie zaktualizowana przed wydaniem takiej wersji.</p>
+
+  <h2 id="warunki">Warunki korzystania</h2>
+  <p>naukaRytmu jest bezpłatnym narzędziem do nauki i ćwiczenia gry na pianinie.</p>
+  <p>Aplikacja jest udostępniana „tak jak jest”, bez jakichkolwiek gwarancji. Wyniki pomiaru rytmu są pomocą w nauce,
+     a nie oceną egzaminacyjną; ich dokładność zależy m.in. od instrumentu i urządzenia.</p>
+  <p>Odpowiadasz za to, by mieć prawo do korzystania z plików z utworami, które wczytujesz do aplikacji.</p>
+</main>
+</body>
+</html>
